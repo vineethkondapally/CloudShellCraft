@@ -1,4 +1,4 @@
-# Windows Template Patching Automation Script
+# VMware Template Patching Automation Script
 
 This PowerShell script automates the patching of Windows templates hosted on vCenter. It streamlines the process of converting templates to virtual machines, applying Windows updates, and converting them back to templates. It is especially useful in lab or enterprise environments where consistent patching of Windows templates is essential.
 
@@ -6,7 +6,7 @@ This PowerShell script automates the patching of Windows templates hosted on vCe
 
 When executed, the script performs the following actions:
 
-1. Converts a Windows template to a virtual machine (VM).
+1. Converts a template to a virtual machine (VM).
 2. Assigns a DHCP VLAN network (via a specified dvPortGroup).
 3. Powers on the VM and waits for it to receive an IP configuration.
 4. Uses `Invoke-VMScript` to run a Windows Update script inside the VM.
